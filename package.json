@@ -7,7 +7,7 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -20,5 +20,20 @@
     "eslint-plugin-import": "^2.29.1",
     "jest": "^29.7.0",
     "prettier": "^3.2.5"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UCSE-Programacion-2/evolucion-ecmascript-0mgm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/UCSE-Programacion-2/evolucion-ecmascript-0mgm/issues"
+  },
+  "homepage": "https://github.com/UCSE-Programacion-2/evolucion-ecmascript-0mgm#readme"
 }
